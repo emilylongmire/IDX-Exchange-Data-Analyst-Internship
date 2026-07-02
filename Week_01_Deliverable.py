@@ -35,16 +35,17 @@ sold25 = pd.read_csv("csv/CRMLSSold202601.csv", dtype=data_types)
 sold26 = pd.read_csv("csv/CRMLSSold202602.csv")
 sold27 = pd.read_csv("csv/CRMLSSold202603.csv")
 sold28 = pd.read_csv("csv/CRMLSSold202604.csv")
+sold29 = pd.read_csv("csv/CRMLSSold202605.csv")
 
 # concatenate sold data
 sold = pd.concat([sold1, sold2, sold3, sold4, sold5, sold6, sold7, sold8,
                   sold9, sold10, sold11, sold12, sold13, sold14, sold15,
                   sold16, sold17, sold18, sold19, sold20, sold21, sold22,
-                  sold23, sold24, sold25, sold26, sold27, sold28])
+                  sold23, sold24, sold25, sold26, sold27, sold28, sold29])
 
 # read in listing data
-list1= pd.read_csv("csv/CRMLSSold202401.csv")
-list2 = pd.read_csv("csv/CRMLSSold202402.csv")
+list1= pd.read_csv("csv/CRMLSListing202401.csv")
+list2 = pd.read_csv("csv/CRMLSListing202402.csv")
 list3 = pd.read_csv("csv/CRMLSListing202403.csv")
 list4 = pd.read_csv("csv/CRMLSListing202404.csv")
 list5 = pd.read_csv("csv/CRMLSListing202405.csv")
@@ -71,12 +72,13 @@ list25 = pd.read_csv("csv/CRMLSListing202601.csv")
 list26 = pd.read_csv("csv/CRMLSListing202602.csv", dtype=data_types)
 list27 = pd.read_csv("csv/CRMLSListing202603.csv")
 list28 = pd.read_csv("csv/CRMLSListing202604.csv")
+list29 = pd.read_csv("csv/CRMLSListing202605.csv")
 
 # concatenate listing data
 list = pd.concat([list1, list2, list3, list4, list5, list6, list7, list8,
                   list9, list10, list11, list12, list13, list14, list15,
                   list16, list17, list18, list19, list20, list21, list22,
-                  list23, list24, list25, list26, list27, list28])
+                  list23, list24, list25, list26, list27, list28, list29])
 
 # drop extra columns
 sold.drop(columns={"lonfilled","latfilled"}, inplace=True)
