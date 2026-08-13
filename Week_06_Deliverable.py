@@ -28,7 +28,6 @@ sold["Close to Original List Ratio"] = sold["ClosePrice"] / sold["OriginalListPr
 sold["Listing to Contract Days"] = (sold["PurchaseContractDate"] - sold["ListingContractDate"]).dt.days
 sold["Contract to Close Days"] = (sold["CloseDate"] - sold["PurchaseContractDate"]).dt.days
 
-
 # add school districts using latitude and longitude --------------------------------------------------------------------
 school_districts = gpd.read_file("California_School_District_Areas_2024-25.geojson")
 school_districts = school_districts.to_crs("EPSG:4326")
@@ -72,3 +71,5 @@ print("\nSegment Analysis Office: \n", office.head(10))
 property_type.to_csv("Segment_Analysis_Property_Type.csv", index=False)
 county.to_csv("Segment_Analysis_County.csv", index=False)
 office.to_csv("Segment_Analysis_Office.csv", index=False)
+
+sold.to_csv("Sold_Cleaned.csv", index=False)
