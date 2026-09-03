@@ -18,8 +18,8 @@ Week 8 - Market Analysis Tableau Dashboard
 
 Week 9 - Competitive Analysis Tableau Dashboard
 
-Week 10 - Finalizing dashboards
+Week 10 - Finaled dashboards
 
-Week 11 - 1-page market intelligence report
+Week 11 - 1-page market intelligence report and uploaded dashboards to Tableau Public
 
 Week 12 - Final presentation
